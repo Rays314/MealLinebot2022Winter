@@ -354,13 +354,13 @@ MigrationBackup/
 
 # Linebot setting file (for security purposes)
 # Uncomment the following lines to hide the file
-# src/[Ss]etting[Ss].*
-# src/[Ss]etting.*
+src/[Ss]etting[Ss].*
+src/[Ss]etting.*
 
 # Google sheets (for the security purposes)
 # Uncomment the following line to hide the file
-# **/*.gsheet
+**/*.gsheet
 
 # Clasp settings (for security purposes)
 # Uncomment the following line to hide the file
-# .clasp.json
+.clasp.json
