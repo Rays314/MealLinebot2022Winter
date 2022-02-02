@@ -19,8 +19,8 @@ const LIFFURL = '';
 const SAVE_OPTIONS = {
   "GROUP_DATA_SHEET_NAME": "群組",
   "USER_DATA_SHEET_NAME": "名單",
-  "TO_SAVE_GROUP_DATA": true,
-  "TO_SAVE_USER_DATA": true,
+  "TO_SAVE_GROUP_DATA": false,
+  "TO_SAVE_USER_DATA": false,
 };
 
 /**
