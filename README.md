@@ -91,18 +91,20 @@ It is a LINE chatbot written in Google Apps Script (Javascript) with Google shee
 <a id="preparations"></a>
 
 ### Preparations
-1. Sign up on [Github](https://github.com/).
-1. [Create a repository](https://docs.github.com/en/get-started/quickstart/create-a-repo) and copy the repo path (hyperlink) as `<path>`.
-1. Clone the repo to the working directory with the commands ([Ref.](https://stackoverflow.com/a/18999726)).  
-    `git init`
-
-    `git remote add origin <path>`
-
-    `git fetch`
-
-    `git checkout -t origin/master`
-    
-    Note: `-t` will set the upstream branch for you, if that is what you want, and it usually is.
+1. Set up things of Github  
+    1. Sign up on [Github](https://github.com/).
+    1. Create an empty folder locally as the working directory.
+    1. Clone the repo to the working directory with the commands ([Ref.1](https://stackoverflow.com/questions/29368837/copy-a-git-repo-without-history) [Ref.2](https://www.cyberciti.biz/faq/how-to-remove-non-empty-directory-in-linux/)).  
+    `git clone https://github.com/Rays314/LinebotSample`
+    1. Remove the commit history in the original repository.  
+        `rm -rf .git` (in Linux)  
+        `rmdir .git /S /Q` (in Windows)  
+    1. [Create a new repository](https://docs.github.com/en/get-started/quickstart/create-a-repo) and copy the repo path (hyperlink) as `<path>`.
+    1. Create the first commit to the new repository.  
+        `git remote add origin <path>`  
+        `git add .`  
+        `git commit -m "Initial Commit"`  
+        `git push -u origin master`
 1. Change the default editor of git to VS Code locally. ([Ref.](https://stackoverflow.com/a/36427485))  
     `git config core.editor "code --wait"`
 1. Google sheet and project
